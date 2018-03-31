@@ -7,7 +7,7 @@ body {
 
 .mainBody {
     margin:25px auto auto auto;
-    color: whitesmoke;
+    color: #ADACA2;
     text-align: center;
     float:left;
 }
@@ -28,12 +28,13 @@ header {
 
 .container {
     padding: 15px;
-    margin: auto;
+    margin: 35px auto auto auto;
     float: left;
     position: relative;
     left: 20%;
     width: 60%;
-    border: 2px solid grey;
+    border: 2px solid #3D3A31;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 @media only screen and (max-width: 1255px){
@@ -48,7 +49,7 @@ header {
     }
     .mainBody {
         margin: 25px auto;
-        border: 2px solid grey;
+        border: 2px solid #3D3A31;
         float: none;
         padding: 25px;
     }

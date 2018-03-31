@@ -10,7 +10,7 @@ var wordList = [
     "cake",
     "waffles",
     "salad",
-    "bacon",
+    "donut",
     "chocolate"];
 
 //variables
@@ -79,6 +79,7 @@ function letterMatch(userGuess) {
 function finishGame() {
     if (splitLetters.toString() == cpuWordBlanks.toString()) {
         wins++;
+        // winImage();
         winMessage();
         document.getElementById("winsCounter").innerHTML = wins;
         startGame();
@@ -89,6 +90,46 @@ function finishGame() {
         startGame();
     }
 }
+
+//can't get this to work
+// function winImage() {
+//     if (cpuWordBlanks == "burger") {
+//         document.getElementById("winningImages").src = "assets/images/burger.jpeg";
+//     }
+//     else if (cpuWordBlanks == "steak") {
+//         document.getElementById("winningImages").src = "assets/images/steak.jpeg";
+//     }
+//     else if (cpuWordBlanks == "pizza") {
+//         document.getElementById("winningImages").src = "assets/images/pizza.jpeg";
+//     }
+//     else if (cpuWordBlanks == "ramen") {
+//         document.getElementById("winningImages").src = "assets/images/ramen.jpeg";
+//     }
+//     else if (cpuWordBlanks == "burrot") {
+//         document.getElementById("winningImages").src = "assets/images/burrito.jpeg";
+//     }
+//     else if (cpuWordBlanks == "sushi") {
+//         document.getElementById("winningImages").src = "assets/images/sushi.jpeg";
+//     }
+//     else if (cpuWordBlanks == "pasta") {
+//         document.getElementById("winningImages").src = "assets/images/pasta.jpeg";
+//     }
+//     else if (cpuWordBlanks == "cake") {
+//         document.getElementById("winningImages").src = "assets/images/cake.jpeg";
+//     }
+//     else if (cpuWordBlanks == "waffles") {
+//         document.getElementById("winningImages").src = "assets/images/waffles.jpeg";
+//     }
+//     else if (cpuWordBlanks == "salad") {
+//         document.getElementById("winningImages").src = "assets/images/salad.jpeg";
+//     }
+//     else if (cpuWordBlanks == "donut") {
+//         document.getElementById("winningImages").src = "assets/images/donut.png";
+//     }
+//     else { 
+//         document.getElementById("winningImages").src = "assets/images/chocolate.jpeg";
+//     }
+// }
 
 function loseMessage() {
     var loserText = 
